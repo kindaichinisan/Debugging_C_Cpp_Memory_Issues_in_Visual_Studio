@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_ada0fb1cd3b2e4a5735e477c510c7a0e" kind="dir">
+    <compoundname>E:/Work/Courses/MemoryLeaks/Code</compoundname>
+    <innerdir refid="dir_c97f1555ef3f17663b709bf9e68ff641">E:/Work/Courses/MemoryLeaks/Code/String</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="E:/Work/Courses/MemoryLeaks/Code/"/>
+  </compounddef>
+</doxygen>

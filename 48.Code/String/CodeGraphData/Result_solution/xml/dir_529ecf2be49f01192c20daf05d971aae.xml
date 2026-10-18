@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_529ecf2be49f01192c20daf05d971aae" kind="dir">
+    <compoundname>E:/Work/Courses/MemoryLeaks/Code/String/String</compoundname>
+    <innerfile refid="_source_8cpp">Source.cpp</innerfile>
+    <innerfile refid="_string_8cpp">String.cpp</innerfile>
+    <innerfile refid="_string_8h">String.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/"/>
+  </compounddef>
+</doxygen>

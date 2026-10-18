@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_string" kind="class"><name>String</name>
+    <member refid="class_string_1aaaa066e4011f1dcab7caf899bd3714c1" kind="variable"><name>m_pBuffer</name></member>
+    <member refid="class_string_1a2241ae057d9e6c8a81797c562b5b8aa4" kind="variable"><name>m_Length</name></member>
+    <member refid="class_string_1a3221521ea952d652fb36a5a3c7ccd5b5" kind="function"><name>Allocate</name></member>
+    <member refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kind="function"><name>String</name></member>
+    <member refid="class_string_1ac40b2a3fb58c2d8556f5e6ff73510036" kind="function"><name>~String</name></member>
+    <member refid="class_string_1acbc2adfb0ed88f250419919fed8929b4" kind="function"><name>String</name></member>
+    <member refid="class_string_1afc158dffcdf56e601bd640cbacdfcd3c" kind="function"><name>String</name></member>
+    <member refid="class_string_1a734f34a0b7a42bcad30c368d6e8c5469" kind="function"><name>operator=</name></member>
+    <member refid="class_string_1a4241402b5c5d10d88215a7d267188b65" kind="function"><name>GetLength</name></member>
+    <member refid="class_string_1acfbdfc602a3e2e725bec7459737e6273" kind="function"><name>GetString</name></member>
+    <member refid="class_string_1a8752005737b3df3aaf54302405311f31" kind="function"><name>operator+</name></member>
+    <member refid="class_string_1ab84728b14cac3bc213351c8ae8fb3364" kind="function"><name>operator+=</name></member>
+    <member refid="class_string_1a191a3674575daaef2d4c93a9692ede2d" kind="function"><name>operator[]</name></member>
+    <member refid="class_string_1a83b19416bad06e0044cf3670d79ece95" kind="function"><name>operator[]</name></member>
+    <member refid="class_string_1af2e1d58adfaabaa1bb7223771755e98c" kind="function"><name>Insert</name></member>
+    <member refid="class_string_1a9614103eb9ecb9bcd7fd3132c719685b" kind="function"><name>Append</name></member>
+    <member refid="class_string_1ae92a73ef9b92b0d49abbef6bb954f8fd" kind="function"><name>Assign</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_source_8cpp" kind="file"><name>Source.cpp</name>
+    <member refid="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" kind="function"><name>Print</name></member>
+    <member refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_string_8cpp" kind="file"><name>String.cpp</name>
+  </compound>
+  <compound refid="_string_8h" kind="file"><name>String.h</name>
+  </compound>
+  <compound refid="dir_ada0fb1cd3b2e4a5735e477c510c7a0e" kind="dir"><name>E:/Work/Courses/MemoryLeaks/Code</name>
+  </compound>
+  <compound refid="dir_1a867e0fcb0096465910e462d0be7237" kind="dir"><name>E:/Work/Courses</name>
+  </compound>
+  <compound refid="dir_885cc87fac2d91e269af0a5a959fa5f6" kind="dir"><name>E:</name>
+  </compound>
+  <compound refid="dir_1d44f11a909817f966a660a15db18235" kind="dir"><name>E:/Work/Courses/MemoryLeaks</name>
+  </compound>
+  <compound refid="dir_529ecf2be49f01192c20daf05d971aae" kind="dir"><name>E:/Work/Courses/MemoryLeaks/Code/String/String</name>
+  </compound>
+  <compound refid="dir_c97f1555ef3f17663b709bf9e68ff641" kind="dir"><name>E:/Work/Courses/MemoryLeaks/Code/String</name>
+  </compound>
+  <compound refid="dir_bf3903ff78e7bbf9f271def1bfe6db6a" kind="dir"><name>E:/Work</name>
+  </compound>
+</doxygenindex>

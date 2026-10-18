@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_source_8cpp" kind="file">
+    <compoundname>Source.cpp</compoundname>
+    <includes refid="_string_8h" local="yes">String.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cassert</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>cassert</label>
+      </node>
+      <node id="2">
+        <label>stdexcept</label>
+      </node>
+      <node id="1">
+        <label>String.h</label>
+        <link refid="_string_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="0">
+        <label>E:/Work/Courses/MemoryLeaks/Code/String/String/Source.cpp</label>
+        <link refid="Source.cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Print</definition>
+        <argsstring>(const String &amp;txt)</argsstring>
+        <name>Print</name>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>txt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/Source.cpp" line="5" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/Source.cpp" bodystart="5" bodyend="7"/>
+        <references refid="class_string_1a4241402b5c5d10d88215a7d267188b65" compoundref="_string_8h" startline="15" endline="17">String::GetLength</references>
+        <references refid="class_string_1acfbdfc602a3e2e725bec7459737e6273" compoundref="_string_8h" startline="18" endline="20">String::GetString</references>
+        <referencedby refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_source_8cpp" startline="8" endline="19">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/Source.cpp" line="8" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/Source.cpp" bodystart="8" bodyend="19"/>
+        <references refid="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" compoundref="_source_8cpp" startline="5" endline="7">Print</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_string_8h" kindref="compound">String.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" kindref="member">Print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref><sp/>&amp;txt)<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>txt.<ref refid="class_string_1a4241402b5c5d10d88215a7d267188b65" kindref="member">GetLength</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>txt.<ref refid="class_string_1acfbdfc602a3e2e725bec7459737e6273" kindref="member">GetString</ref>()<sp/>&lt;&lt;<sp/>std::endl;<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8" refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//_crtBreakAlloc<sp/>=<sp/>197<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/>text{</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">}<sp/>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" kindref="member">Print</ref>(text)<sp/>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>text.Insert(</highlight><highlight class="stringliteral">&quot;Bye&quot;</highlight><highlight class="normal">,<sp/>1)<sp/>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" kindref="member">Print</ref>(text)<sp/>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>text.Append(</highlight><highlight class="stringliteral">&quot;Object<sp/>Oriented<sp/>Language&quot;</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" kindref="member">Print</ref>(text)<sp/>;<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>text.Assign(</highlight><highlight class="stringliteral">&quot;Goodbye&quot;</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" kindref="member">Print</ref>(text)<sp/>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(_CrtCheckMemory())<sp/>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/Source.cpp"/>
+  </compounddef>
+</doxygen>

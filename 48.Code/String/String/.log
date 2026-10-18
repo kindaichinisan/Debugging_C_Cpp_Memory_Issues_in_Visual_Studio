@@ -1,0 +1,12 @@
+### HEAP CORRUPTION DETECTED ###
+	Function->void __thiscall String::Allocate(const char *)
+	File->e:\work\courses\memoryleaks\code\string\string\string.cpp
+### HEAP CORRUPTION DETECTED ###
+	Function->void __thiscall String::Insert(const char *,unsigned int)
+	File->e:\work\courses\memoryleaks\code\string\string\string.cpp
+### HEAP CORRUPTION DETECTED ###
+	Function->void __thiscall String::Insert(const char *,unsigned int)
+	File->e:\work\courses\memoryleaks\code\string\string\string.cpp
+### HEAP CORRUPTION DETECTED ###
+	Function->void __thiscall String::Allocate(const char *)
+	File->e:\work\courses\memoryleaks\code\string\string\string.cpp

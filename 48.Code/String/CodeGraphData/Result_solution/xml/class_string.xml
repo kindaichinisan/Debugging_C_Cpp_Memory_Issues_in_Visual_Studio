@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_string" kind="class" prot="public">
+    <compoundname>String</compoundname>
+    <includes refid="_string_8h" local="no">String.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_string_1aaaa066e4011f1dcab7caf899bd3714c1" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* String::m_pBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_pBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="6" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_string_1a3221521ea952d652fb36a5a3c7ccd5b5" compoundref="_string_8cpp" startline="17" endline="22">Allocate</referencedby>
+        <referencedby refid="class_string_1acfbdfc602a3e2e725bec7459737e6273" compoundref="_string_8h" startline="18" endline="20">GetString</referencedby>
+        <referencedby refid="class_string_1af2e1d58adfaabaa1bb7223771755e98c" compoundref="_string_8cpp" startline="49" endline="68">Insert</referencedby>
+        <referencedby refid="class_string_1a191a3674575daaef2d4c93a9692ede2d" compoundref="_string_8h" startline="23" endline="27">operator[]</referencedby>
+        <referencedby refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" compoundref="_string_8cpp" startline="5" endline="9">String</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_string_1a2241ae057d9e6c8a81797c562b5b8aa4" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t String::m_Length</definition>
+        <argsstring></argsstring>
+        <name>m_Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="7" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_string_1a3221521ea952d652fb36a5a3c7ccd5b5" compoundref="_string_8cpp" startline="17" endline="22">Allocate</referencedby>
+        <referencedby refid="class_string_1a9614103eb9ecb9bcd7fd3132c719685b" compoundref="_string_8cpp" startline="74" endline="76">Append</referencedby>
+        <referencedby refid="class_string_1a4241402b5c5d10d88215a7d267188b65" compoundref="_string_8h" startline="15" endline="17">GetLength</referencedby>
+        <referencedby refid="class_string_1af2e1d58adfaabaa1bb7223771755e98c" compoundref="_string_8cpp" startline="49" endline="68">Insert</referencedby>
+        <referencedby refid="class_string_1a191a3674575daaef2d4c93a9692ede2d" compoundref="_string_8h" startline="23" endline="27">operator[]</referencedby>
+        <referencedby refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" compoundref="_string_8cpp" startline="5" endline="9">String</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_string_1a3221521ea952d652fb36a5a3c7ccd5b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void String::Allocate</definition>
+        <argsstring>(const char *pstr)</argsstring>
+        <name>Allocate</name>
+        <param>
+          <type>const char *</type>
+          <declname>pstr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="8" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="17" bodyend="22"/>
+        <references refid="class_string_1a2241ae057d9e6c8a81797c562b5b8aa4" compoundref="_string_8h" startline="7">m_Length</references>
+        <references refid="class_string_1aaaa066e4011f1dcab7caf899bd3714c1" compoundref="_string_8h" startline="6">m_pBuffer</references>
+        <referencedby refid="class_string_1ae92a73ef9b92b0d49abbef6bb954f8fd" compoundref="_string_8cpp" startline="78" endline="80">Assign</referencedby>
+        <referencedby refid="class_string_1a734f34a0b7a42bcad30c368d6e8c5469" compoundref="_string_8cpp" startline="28" endline="33">operator=</referencedby>
+        <referencedby refid="class_string_1acbc2adfb0ed88f250419919fed8929b4" compoundref="_string_8cpp" startline="13" endline="15">String</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>String::String</definition>
+        <argsstring>()</argsstring>
+        <name>String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="10" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="5" bodyend="9"/>
+        <references refid="class_string_1a2241ae057d9e6c8a81797c562b5b8aa4" compoundref="_string_8h" startline="7">m_Length</references>
+        <references refid="class_string_1aaaa066e4011f1dcab7caf899bd3714c1" compoundref="_string_8h" startline="6">m_pBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1ac40b2a3fb58c2d8556f5e6ff73510036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>String::~String</definition>
+        <argsstring>()</argsstring>
+        <name>~String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="11" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1acbc2adfb0ed88f250419919fed8929b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>String::String</definition>
+        <argsstring>(const char *pstr)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const char *</type>
+          <declname>pstr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="12" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="13" bodyend="15"/>
+        <references refid="class_string_1a3221521ea952d652fb36a5a3c7ccd5b5" compoundref="_string_8cpp" startline="17" endline="22">Allocate</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1afc158dffcdf56e601bd640cbacdfcd3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>String::String</definition>
+        <argsstring>(const String &amp;other)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="13" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="24" bodyend="26"/>
+        <references refid="class_string_1a3221521ea952d652fb36a5a3c7ccd5b5" compoundref="_string_8cpp" startline="17" endline="22">Allocate</references>
+        <references refid="class_string_1acfbdfc602a3e2e725bec7459737e6273" compoundref="_string_8h" startline="18" endline="20">GetString</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a734f34a0b7a42bcad30c368d6e8c5469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+        <definition>String &amp; String::operator=</definition>
+        <argsstring>(const String &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="14" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="28" bodyend="33"/>
+        <references refid="class_string_1a3221521ea952d652fb36a5a3c7ccd5b5" compoundref="_string_8cpp" startline="17" endline="22">Allocate</references>
+        <references refid="class_string_1acfbdfc602a3e2e725bec7459737e6273" compoundref="_string_8h" startline="18" endline="20">GetString</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a4241402b5c5d10d88215a7d267188b65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t String::GetLength</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="15" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" bodystart="15" bodyend="17"/>
+        <references refid="class_string_1a2241ae057d9e6c8a81797c562b5b8aa4" compoundref="_string_8h" startline="7">m_Length</references>
+        <referencedby refid="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" compoundref="_source_8cpp" startline="5" endline="7">Print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1acfbdfc602a3e2e725bec7459737e6273" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* String::GetString</definition>
+        <argsstring>() const </argsstring>
+        <name>GetString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="18" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" bodystart="18" bodyend="20"/>
+        <references refid="class_string_1aaaa066e4011f1dcab7caf899bd3714c1" compoundref="_string_8h" startline="6">m_pBuffer</references>
+        <referencedby refid="class_string_1ab84728b14cac3bc213351c8ae8fb3364" compoundref="_string_8cpp" startline="44" endline="47">operator+=</referencedby>
+        <referencedby refid="class_string_1a734f34a0b7a42bcad30c368d6e8c5469" compoundref="_string_8cpp" startline="28" endline="33">operator=</referencedby>
+        <referencedby refid="_source_8cpp_1a93588d1ee63e9e86b166872c22698314" compoundref="_source_8cpp" startline="5" endline="7">Print</referencedby>
+        <referencedby refid="class_string_1afc158dffcdf56e601bd640cbacdfcd3c" compoundref="_string_8cpp" startline="24" endline="26">String</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a8752005737b3df3aaf54302405311f31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String String::operator+</definition>
+        <argsstring>(const String &amp;other) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="21" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1ab84728b14cac3bc213351c8ae8fb3364" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+        <definition>String &amp; String::operator+=</definition>
+        <argsstring>(const String &amp;other)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="22" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="44" bodyend="47"/>
+        <references refid="class_string_1a9614103eb9ecb9bcd7fd3132c719685b" compoundref="_string_8cpp" startline="74" endline="76">Append</references>
+        <references refid="class_string_1acfbdfc602a3e2e725bec7459737e6273" compoundref="_string_8h" startline="18" endline="20">GetString</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a191a3674575daaef2d4c93a9692ede2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char String::operator[]</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="23" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" bodystart="23" bodyend="27"/>
+        <references refid="class_string_1a2241ae057d9e6c8a81797c562b5b8aa4" compoundref="_string_8h" startline="7">m_Length</references>
+        <references refid="class_string_1aaaa066e4011f1dcab7caf899bd3714c1" compoundref="_string_8h" startline="6">m_pBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a83b19416bad06e0044cf3670d79ece95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char &amp;</type>
+        <definition>char&amp; String::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="28" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" bodystart="28" bodyend="32"/>
+        <references refid="class_string_1a2241ae057d9e6c8a81797c562b5b8aa4" compoundref="_string_8h" startline="7">m_Length</references>
+        <references refid="class_string_1aaaa066e4011f1dcab7caf899bd3714c1" compoundref="_string_8h" startline="6">m_pBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1af2e1d58adfaabaa1bb7223771755e98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void String::Insert</definition>
+        <argsstring>(const char *pStr, size_t position)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>const char *</type>
+          <declname>pStr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="33" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="49" bodyend="68"/>
+        <references refid="class_string_1a2241ae057d9e6c8a81797c562b5b8aa4" compoundref="_string_8h" startline="7">m_Length</references>
+        <references refid="class_string_1aaaa066e4011f1dcab7caf899bd3714c1" compoundref="_string_8h" startline="6">m_pBuffer</references>
+        <referencedby refid="class_string_1a9614103eb9ecb9bcd7fd3132c719685b" compoundref="_string_8cpp" startline="74" endline="76">Append</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a9614103eb9ecb9bcd7fd3132c719685b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void String::Append</definition>
+        <argsstring>(const char *pStr)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>const char *</type>
+          <declname>pStr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="34" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="74" bodyend="76"/>
+        <references refid="class_string_1af2e1d58adfaabaa1bb7223771755e98c" compoundref="_string_8cpp" startline="49" endline="68">Insert</references>
+        <references refid="class_string_1a2241ae057d9e6c8a81797c562b5b8aa4" compoundref="_string_8h" startline="7">m_Length</references>
+        <referencedby refid="class_string_1ab84728b14cac3bc213351c8ae8fb3364" compoundref="_string_8cpp" startline="44" endline="47">operator+=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1ae92a73ef9b92b0d49abbef6bb954f8fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void String::Assign</definition>
+        <argsstring>(const char *pStr)</argsstring>
+        <name>Assign</name>
+        <param>
+          <type>const char *</type>
+          <declname>pStr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="35" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.cpp" bodystart="78" bodyend="80"/>
+        <references refid="class_string_1a3221521ea952d652fb36a5a3c7ccd5b5" compoundref="_string_8cpp" startline="17" endline="22">Allocate</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" line="5" column="1" bodyfile="E:/Work/Courses/MemoryLeaks/Code/String/String/String.h" bodystart="4" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_string_1a3221521ea952d652fb36a5a3c7ccd5b5" prot="private" virt="non-virtual"><scope>String</scope><name>Allocate</name></member>
+      <member refid="class_string_1a9614103eb9ecb9bcd7fd3132c719685b" prot="public" virt="non-virtual"><scope>String</scope><name>Append</name></member>
+      <member refid="class_string_1ae92a73ef9b92b0d49abbef6bb954f8fd" prot="public" virt="non-virtual"><scope>String</scope><name>Assign</name></member>
+      <member refid="class_string_1a4241402b5c5d10d88215a7d267188b65" prot="public" virt="non-virtual"><scope>String</scope><name>GetLength</name></member>
+      <member refid="class_string_1acfbdfc602a3e2e725bec7459737e6273" prot="public" virt="non-virtual"><scope>String</scope><name>GetString</name></member>
+      <member refid="class_string_1af2e1d58adfaabaa1bb7223771755e98c" prot="public" virt="non-virtual"><scope>String</scope><name>Insert</name></member>
+      <member refid="class_string_1a2241ae057d9e6c8a81797c562b5b8aa4" prot="private" virt="non-virtual"><scope>String</scope><name>m_Length</name></member>
+      <member refid="class_string_1aaaa066e4011f1dcab7caf899bd3714c1" prot="private" virt="non-virtual"><scope>String</scope><name>m_pBuffer</name></member>
+      <member refid="class_string_1a8752005737b3df3aaf54302405311f31" prot="public" virt="non-virtual"><scope>String</scope><name>operator+</name></member>
+      <member refid="class_string_1ab84728b14cac3bc213351c8ae8fb3364" prot="public" virt="non-virtual"><scope>String</scope><name>operator+=</name></member>
+      <member refid="class_string_1a734f34a0b7a42bcad30c368d6e8c5469" prot="public" virt="non-virtual"><scope>String</scope><name>operator=</name></member>
+      <member refid="class_string_1a191a3674575daaef2d4c93a9692ede2d" prot="public" virt="non-virtual"><scope>String</scope><name>operator[]</name></member>
+      <member refid="class_string_1a83b19416bad06e0044cf3670d79ece95" prot="public" virt="non-virtual"><scope>String</scope><name>operator[]</name></member>
+      <member refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" prot="public" virt="non-virtual"><scope>String</scope><name>String</name></member>
+      <member refid="class_string_1acbc2adfb0ed88f250419919fed8929b4" prot="public" virt="non-virtual"><scope>String</scope><name>String</name></member>
+      <member refid="class_string_1afc158dffcdf56e601bd640cbacdfcd3c" prot="public" virt="non-virtual"><scope>String</scope><name>String</name></member>
+      <member refid="class_string_1ac40b2a3fb58c2d8556f5e6ff73510036" prot="public" virt="non-virtual"><scope>String</scope><name>~String</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

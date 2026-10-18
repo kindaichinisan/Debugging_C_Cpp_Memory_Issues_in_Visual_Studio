@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1540878576 source:e:\work\playground\cppdll\main.cpp
+	"main.h"
+	<iostream>
+
+1540878399 e:\work\playground\cppdll\main.h
+	<windows.h>
+
