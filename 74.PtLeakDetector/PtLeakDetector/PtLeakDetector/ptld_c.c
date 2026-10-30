@@ -1,10 +1,13 @@
 #include <malloc.h>
+#include <pthread.h>
 #include "ptHeader.h"
 #include <stdio.h>
 #include "ptld_c.h"
 #include <string.h>
 static unsigned const char GUARDFILL = 0XFD;
 struct ptMemoryBlockHeader *pHead;
+static pthread_mutex_t ptLock = PTHREAD_MUTEX_INITIALIZER;
+
 int ptIsValidBlock(struct ptMemoryBlockHeader *pCurrentBlock) {
 	for (struct ptMemoryBlockHeader *p = pHead; p != NULL; p = p->m_pNext) {
 		if (pCurrentBlock == p)
@@ -34,6 +37,8 @@ void *ptmalloc(size_t size, const char *pFunction, const char  *pFile, int lineN
 	unsigned char *pEnd = (unsigned char*)pCurrentBlock;
 	pEnd += (sizeof(struct ptMemoryBlockHeader) + size);
 	memset(pEnd, GUARDFILL, GUARDSIZE);
+
+	pthread_mutex_lock(&ptLock);
 	if (pHead == NULL) {
 		pHead = pCurrentBlock;
 	} else {
@@ -41,6 +46,7 @@ void *ptmalloc(size_t size, const char *pFunction, const char  *pFile, int lineN
 		pHead->m_pPrev = pCurrentBlock;
 		pHead = pCurrentBlock;
 	}
+	pthread_mutex_unlock(&ptLock);
 	return pCurrentBlock + 1;
 
 }
@@ -49,7 +55,10 @@ void ptfree(void *p) {
 		return;
 	struct ptMemoryBlockHeader *pCurrentBlock = (struct ptMemoryBlockHeader *)p;
 	pCurrentBlock -= 1;
-	if (ptIsValidBlock(pCurrentBlock)) {
+
+	pthread_mutex_lock(&ptLock);
+	int valid=ptIsValidBlock(pCurrentBlock);
+	if (valid) {
 		if (pCurrentBlock->m_pPrev != NULL) {
 			pCurrentBlock->m_pPrev->m_pNext = pCurrentBlock->m_pNext;
 		} else {
@@ -58,20 +67,23 @@ void ptfree(void *p) {
 		if (pCurrentBlock->m_pNext != NULL) {
 			pCurrentBlock->m_pNext->m_pPrev = pCurrentBlock->m_pPrev;
 		}
-		free(pCurrentBlock);
-	}
+		pthread_mutex_unlock(&ptLock);
 
+		if(valid){
+			free(pCurrentBlock);
+		}
+	}
 }
 void *ptGetBegGuard(struct ptMemoryBlockHeader *ptr) {
 	return &ptr->m_Guard;
 }
 void *ptGetEndGuard(struct ptMemoryBlockHeader *ptr) {
-	unsigned char *user_mem = ptr + 1 ;
+	unsigned char *user_mem = (unsigned char *)(ptr + 1);
 	return user_mem + ptr->m_Size ;
 }
 void ptDumpHeapCorruptionInfo(struct ptMemoryBlockHeader *ptr) {
 	unsigned char guard[GUARDSIZE] = { 0 };
-	memset(guard, GUARDFILL, 4);
+	memset(guard, GUARDFILL, GUARDSIZE);
 	if (memcmp(ptGetBegGuard(ptr), guard, GUARDSIZE) != 0) {
 		printf("\nHeap corruption before memory block\n");
 		printf("Address <0x%p>\n", ptr + 1);
@@ -88,8 +100,10 @@ void ptDumpHeapCorruptionInfo(struct ptMemoryBlockHeader *ptr) {
 	}
 }
 void PtDumpLeaks() {
+	pthread_mutex_lock(&ptLock);
 	if (pHead == NULL) {
 		printf("No leaks detected");
+		pthread_mutex_unlock(&ptLock);
 		return;
 	}
 	printf("\n---------------\n");
@@ -98,9 +112,12 @@ void PtDumpLeaks() {
 	for (struct ptMemoryBlockHeader *ptr = pHead; ptr != NULL; ptr = ptr->m_pNext) {
 		ptDumpBlock(ptr);
 	}
+	pthread_mutex_unlock(&ptLock);
 }
 void PtCheckMemory() {
+	pthread_mutex_lock(&ptLock);
 	for (struct ptMemoryBlockHeader *ptr = pHead; ptr != NULL; ptr = ptr->m_pNext) {
 		ptDumpHeapCorruptionInfo(ptr);
 	}
+	pthread_mutex_unlock(&ptLock);
 }
